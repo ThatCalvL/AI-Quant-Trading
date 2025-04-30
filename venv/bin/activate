@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/sugardady/Documents/AI Quant Trade/AI-Quant-Trading/venv"
+VIRTUAL_ENV="/Users/sugardady/Documents/GitHub/AI-Quant-Trading/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/sugardady/Documents/AI Quant Trade/AI-Quant-Trading/venv"
+set -gx VIRTUAL_ENV "/Users/sugardady/Documents/GitHub/AI-Quant-Trading/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

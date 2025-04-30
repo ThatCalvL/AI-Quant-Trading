@@ -1,18 +1,21 @@
-# AI量化交易学习项目
+# AI量化交易学习计划
 
-这是一个为期7天的量化交易入门学习项目，专注于使用Python进行股票交易策略开发。
+这个项目包含了七天量化交易入门学习计划的Jupyter notebooks和相关资源，专注于使用Python进行股票交易策略开发。
 
 ## 项目结构
+
 ```
 .
 ├── README.md           # 项目说明文档
 ├── requirements.txt    # 项目依赖
-├── venv/              # Python虚拟环境
-└── examples/          # 示例代码
-    └── day1_stock_data.py  # 第一天：基础股票数据获取示例
+├── venv/               # Python虚拟环境
+└── examples/           # Jupyter notebooks和示例代码
+    ├── 1_day1_stock_data.ipynb         # 第一天：基础股票数据获取
+    └── 2_day2_stock_data_processing.ipynb  # 第二天：股票数据基础与Python处理
 ```
 
 ## 环境配置
+
 1. 确保已安装Python 3.8+
 
 2. 设置虚拟环境：
@@ -34,26 +37,47 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. 退出虚拟环境（当完成工作后）：
+4. 安装并配置Jupyter：
 ```bash
-conda deactivate
+# 确保已安装jupyter
+pip install jupyter
+
+# 注册虚拟环境到Jupyter
+python -m ipykernel install --user --name=venv --display-name="Python (AI-Quant-Trading)"
 ```
 
-## 快速开始
-确保虚拟环境已激活，然后运行第一天的示例代码：
+## 使用方法
+
+有两种方式运行Jupyter notebooks：
+
+### 1. 启动Jupyter Lab（推荐）
+
 ```bash
-python examples/day1_stock_data.py
+jupyter lab
 ```
 
-这将获取苹果公司(AAPL)最近10天的股票数据并绘制走势图。
+### 2. 启动Jupyter Notebook
 
-## 学习计划
-- 第1天：量化交易基础概念与环境准备
+```bash
+jupyter notebook
+```
+
+启动后，在浏览器中导航到`examples`目录，点击对应的notebook文件（.ipynb）进行学习。
+
+## 学习进度
+
+- **第1天**：量化交易基础概念与环境准备
   - 理解量化交易的基本概念
   - 搭建Python开发环境
-  - 实现第一个数据获取示例
+  - 使用yfinance获取股票数据
+  
+- **第2天**：股票数据基础与Python处理
+  - 熟悉股票数据的基本构成
+  - 使用pandas处理时间序列数据
+  - 对股票数据进行基本统计分析与可视化
 
 ## 注意事项
+
 - 本项目使用yfinance获取股票数据，仅用于学习目的
 - 实际交易时需要考虑更多因素，如交易成本、滑点等
 - 始终在虚拟环境中运行代码，避免依赖冲突

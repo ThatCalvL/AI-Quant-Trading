@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/sugardady/Documents/AI Quant Trade/AI-Quant-Trading/venv/bin/python3" "$0" "$@"
-' '''
+#!/Users/sugardady/Documents/GitHub/AI-Quant-Trading/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
